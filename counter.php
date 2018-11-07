@@ -2,11 +2,6 @@
 session_start();
 if(!isset($_SESSION['visit']) || $_SESSION['visit'] < time() - 60){
     $_SESSION['visit'] = time();
-    include "vendor/autoload.php";
-
-    ORM::configure('mysql:host=localhost;dbname=shield');
-    ORM::configure('username', 'root');
-    ORM::configure('password', '');
 
     $ip = '';
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {

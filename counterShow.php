@@ -1,9 +1,6 @@
 <?php
 include "vendor/autoload.php";
-
-ORM::configure('mysql:host=localhost;dbname=shield');
-ORM::configure('username', 'root');
-ORM::configure('password', '');
+include 'config.php';
 
 $show24 = ORM::forTable('www_counter')
     ->rawQuery('
