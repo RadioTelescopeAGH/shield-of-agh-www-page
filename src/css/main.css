@@ -1296,3 +1296,16 @@ input, textarea{
 .defList li{
   list-style: disc; 
 }
+strong {
+  font-weight: bold;
+}
+.logoBar{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoBar img{
+  max-width: 60px;
+  margin: 0px 10px;
+}
