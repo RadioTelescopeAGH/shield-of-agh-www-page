@@ -1,0 +1,97 @@
+
+@media screen and (max-width: 1023px) {
+    #title {
+      width: 100%;
+      font-size:30pt;
+      text-align: center;
+    }
+    #menuIcon {
+        display: inline-block !important;
+        cursor: pointer;
+        margin-top: 20px;
+        /* float: right; */
+        /* margin-right: 30px; */
+    }
+    #red, #black, #green{
+        display: none;
+    }
+    #menu{
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 75px;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0);
+        /* height: calc(100% - 75px); */
+        height: 0px;
+        width: 100%;
+        transition: 0.7s;
+        font-size: 0pt;
+    }
+    .openMenu{
+        display: block !important;
+        height: calc(100% - 75px) !important;
+        transition: 0.7s;
+        font-size: 20pt !important;
+    }
+    #footer{
+        display: none;
+    }
+    .menubar{
+        color: rgb(244, 244, 244);
+        text-align: center;
+        font-size: inherit;
+        float: left;
+        width: 100%;
+        display: block;
+        background-color:rgb(244, 244, 244);
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* display: inherit; */
+        /* height: inherit; */
+    }
+
+    #mainImage{
+        margin-left: -165px;
+    }
+
+    .menuitem{
+        color: rgb(244, 244, 244);
+        text-align: center;
+        font-size: inherit;
+        float: left;
+        transform: skewX(30deg);
+        width: 75%;
+        background-color: rgb(199, 18, 49);
+        margin: auto;
+        margin-left:-40px;
+        padding-left: 70px;
+        padding-top: 0px;
+        text-align:left;
+        padding-bottom: 0px;
+
+    }
+    .menuitem:hover{
+        width: 85%;
+        transition:0.5s;
+    }
+    .menutext{
+        transform: skewX(-30deg); 
+    }
+    .menuitem.black{
+    background-color: rgb(35, 31, 28) !important; 
+    }
+    .menuitem.green{
+        background-color: rgb(0, 112, 62) !important; 
+    }
+
+    .menubar>a, .menubar>a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .menubar>a :hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

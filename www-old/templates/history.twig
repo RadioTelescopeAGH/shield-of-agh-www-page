@@ -1,0 +1,39 @@
+{% extends 'static/app.twig' %}
+
+{% block head %}
+    {% include 'static/head.twig' %}
+{% endblock %}
+
+{% block content %}
+<div id="info">
+    <div id="images">
+    &nbsp;
+    </div>
+    <div id="text">
+        <h1>Historia projektu</h1>
+        <p>Wszystko zaczęło się w&nbsp;2008 roku, kiedy grupa studentów z 3 wydziałów(<a href="http://www.imir.agh.edu.pl/">WIMIR</a>, <a href="www.iet.agh.edu.pl/
+">WIET</a>, <a href="www.fis.agh.edu.pl/">
+WFIS</a>) naszej uczelni podjęła się próby zbudowania w&nbsp;pełni sprawnego radioteleskopu. Na dachu budynku D-11 na kampusie została zamontowana czasza paraboliczna o&nbsp;średnicy 310 centymetrów oraz napędy liniowe pozwalające na korektę jej położenia. Prace nad projektem trwały aż do 2011 roku, kiedy członkowie pierwszego zespołu (Team I) zaczęli kończyć studia i&nbsp;podejmować pracę zawodową. Do tego czasu powstały również elementy elektroniczne służące akwizycji danych, tj. odbiornik, tor mikrofalowy oraz przetwornik analogowo-cyfrowy.  Przez kolejne 8 lat projekt był porzucony, aż do listopada 2017. Zarząd koła ogłosił, że poszukuje zespołu chętnego do dokończenia prac nad projektem, tutaj zaczyna się nasza historia…</p>
+        <p>Przed przystąpieniem do prac nad projektem dokonaliśmy oględzin czaszy oraz podjęliśmy próby kontaktu z&nbsp;członkami Team 1. Nie było to proste, jednak w&nbsp;marcu 2018 udało się nam spotkać po raz pierwszy. Dostaliśmy wtedy szczegółową dokumentację techniczną czaszy, napędów oraz układy elektroniczne wraz z ich schematami. Pozwoliło nam to szybko posunąć projekt do przodu o&nbsp;około rok pracy w&nbsp;3 miesiące. Przełomowym punktem była Konferencja Studenckich Kół Naukowych pionu hutniczego, na którym w&nbsp;kategorii Fizyka i Matematyka uzyskaliśmy drugą lokatę, nie mając jeszcze sprawnego urządzenia a&nbsp;tylko przedstawiając plany jego konstrukcji i&nbsp;wykorzystania. Podniosło to morale naszego zespołu (Team II) i&nbsp;umocniło nas w przekonaniu, że to co robimy jest właściwe.</p>
+        <p>Lipiec i sierpień minęły nam na przygotowywaniu okablowania, oprogramowania oraz testach systemu kierowania anteną. Ponad 200 metrów kabli i&nbsp;przewodów łączy urządzenie ze stacją zasilania znajdującą się w&nbsp;wyjściu na dach. Składa się ona z&nbsp;zasilacza, który dostarcza prąd do przetwornicy znajdującej się w&nbsp;bezpośredniej bliskości urządzenia, która zasila wszystkie podsystemy: silniki, elektronikę radioteleskopu, minikomputer oraz zestaw czujników służących weryfikacji położenia i&nbsp;temperatury. Ponadto jest w niej zamontowany niewielki wyświetlacz pokazujący bieżące odczyty z&nbsp;czujników oraz Wielki Czerwony Przycisk odcinający awaryjnie zasilanie.</p>
+        {# <p>W tym miejscu chcielibyśmy serdecznie podziękować członkom Team 1 w którego skład wchodzili:
+        <ul>
+            <li>Magdalena Olbromska
+            <li>Paweł Kalabiński
+            <li>Szymon Kuliś
+            <li>Łukasz Tyrcha
+            <li>Damian Wilczyński
+        </ul>
+        <br/>
+        Nie tylko przekazali nam szczegółową dokumentację techniczną wraz ... TODO
+
+        Pragniemy również podziękować osobiście Damianowi z powyższego zespołu za jego nieocenioną pomoc przy testach elektroniki oraz przebadanie jej za pomocą narzędzi nam niedostępnych.
+        </p> #}
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'static/footer.twig' %}
+{% endblock %}
