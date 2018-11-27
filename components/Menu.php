@@ -2,7 +2,7 @@
 
 class Menu{
 
-  public function getMenu(){
+  function getMenu(){
       $db = ORM::forTable('pages')
           ->select('url')
           ->select('title')
@@ -20,7 +20,7 @@ class Menu{
     return str_replace('{{lista}}', $lista, $html);
   }
 
-  private function makeItem($url, $title){
+  function makeItem($url, $title){
     return '<li class="nav-item"><a class="nav-link" href=".'.$url.'">'.$title.'</a></li>';
   }
 
