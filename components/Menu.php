@@ -2,7 +2,7 @@
 
 class Menu{
 
-  public static function getMenu(){
+  public function getMenu(){
       $db = ORM::forTable('pages')
           ->select('url')
           ->select('title')
