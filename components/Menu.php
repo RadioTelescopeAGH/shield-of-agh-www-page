@@ -14,7 +14,7 @@ class Menu{
 
     $lista = '';
     foreach($db as $item){
-      $lista .= self::makeItem($item['url'], $item['title']);
+      $lista .= $this->makeItem($item['url'], $item['title']);
     }
 
     return str_replace('{{lista}}', $lista, $html);
