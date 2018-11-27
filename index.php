@@ -4,10 +4,22 @@ include 'config.php';
 include 'counter.php';
 include 'Validator.php';
 include 'Render.php';
+include 'components/Menu.php';
 
-$baseUrl = '/shield/www';
-$urlOrigin = $_SERVER['REQUEST_URI'];
-$url = str_replace($baseUrl, '', $urlOrigin);
+$url = '';
+if($_SERVER['SERVER_NAME'] == 'localhost'){
+    $baseUrl = '/shield/www';
+    $urlOrigin = $_SERVER['REQUEST_URI'];
+    $url = str_replace($baseUrl, '', $urlOrigin);
+} else {
+    $baseUrl = '';
+    $urlOrigin = $_SERVER['REQUEST_URI'];
+    if($urlOrigin == '/index.php'){
+        header('Location: /');
+    }
+    $url = str_replace($baseUrl, '', $urlOrigin);
+}
+
 
 $secUrl = Validator::secInput($url, ['filtr' => 0]);
 if(!$secUrl['ok']){
