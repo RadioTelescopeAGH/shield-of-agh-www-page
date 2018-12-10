@@ -1306,6 +1306,7 @@ strong {
   align-items: center;
 }
 .logoBar img{
-  max-width: 60px;
+  max-width: 300px;
+  max-height: 100px;
   margin: 0px 10px;
 }
